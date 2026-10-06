@@ -1,4 +1,7 @@
 ﻿# Practice Python 1
+ Nama : Adrian Ronald Daga
+ Npm : 20241320011
+ Prodi : Sistem Informasi
 
 ## Project Overview
 
@@ -24,9 +27,6 @@ Proyek ini merupakan tugas praktikum Python yang berisi 6 soal latihan dengan fo
 6. Soal 6 - Ringkasan Algoritma  
    Menyajikan ringkasan data hasil dari soal sebelumnya dalam bentuk statistik.
 
-## Dokumen Formal
-
-Dokumen laporan yang lebih formal dapat dilihat di [LAPORAN_PRAKTIKUM.md](LAPORAN_PRAKTIKUM.md).
 
 ## Bukti Hasil Semua Soal
 
