@@ -46,6 +46,6 @@ Proyek ini merupakan tugas praktikum Python yang berisi 6 soal latihan dengan fo
 
 8. Validasi komposit berarti menggabungkan beberapa pengecekan dalam satu proses, misalnya NIM benar, nama tidak kosong, IPK 0.0-4.0, dan SKS sesuai batas. Jika ada satu syarat yang tidak terpenuhi, data ditolak.
 
-## Bukti Hasil Semua Soal
+## Bukti Hasil Soal Praktik
 
 ![Bukti hasil semua soal](bukti-semua-soal.png)
