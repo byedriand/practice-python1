@@ -2,6 +2,6 @@
 
 Proyek latihan Python untuk 6 soal praktik dengan menu utama dan hasil eksekusi per soal.
 
-## Bukti Hasil
+## Bukti Hasil Semua Soal
 
-![Bukti hasil](bukti-hasil.png)
+![Bukti hasil semua soal](bukti-semua-soal.png)
