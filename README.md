@@ -1,4 +1,4 @@
-﻿# Practice Python 1
+﻿# Tugas 1
 
 Nama : Adrian Ronald Daga
 Npm : 20241320011
