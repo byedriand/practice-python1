@@ -235,6 +235,27 @@ def hitung_status_ringkasan(ipk: float, sks: int) -> str:
     return cek_status_mahasiswa(ipk, sks)
 
 
+def program_soal_teori() -> None:
+    """Menampilkan soal teori dan jawaban pada menu utama."""
+    print("\n=== Latihan Soal ===")
+    print("A. Soal Teori")
+    jawaban = [
+        "1. Aturan bisnis adalah ketentuan organisasi, sedangkan logika teknis adalah cara program menerjemahkan aturan tersebut ke dalam kode.",
+        "2. NIM sebaiknya disimpan sebagai string agar format data tetap utuh, termasuk angka depan nol atau kombinasi angka dan huruf.",
+        "3. Operator and membutuhkan semua kondisi benar, sedangkan or cukup satu kondisi benar agar hasilnya benar.",
+        "4. Urutan if, elif, else sangat penting karena program mengecek dari atas ke bawah dan kondisi yang lebih umum bisa menutup kondisi yang lebih spesifik.",
+        "5. for loop dipakai jika jumlah iterasi sudah diketahui, sedangkan while loop dipakai jika pengulangan tergantung kondisi tertentu.",
+        "6. else pada loop dijalankan jika perulangan selesai tanpa break; jika break terjadi, blok else tidak akan berjalan.",
+        "7. Validasi input harus dilakukan sebelum mengevaluasi aturan bisnis agar data masuk benar dan program tidak menghasilkan error atau keputusan salah.",
+        "8. Validasi komposit adalah mengecek beberapa syarat sekaligus sebelum data diterima, misalnya NIM valid, nama tidak kosong, IPK 0.0-4.0, dan SKS sesuai batas.",
+    ]
+
+    for item in jawaban:
+        print(item)
+
+    print("\nBukti: jawaban ini sudah didokumentasikan dalam laporan praktikum sebagai bagian dari tugas.\n")
+
+
 def ringkasan_algoritma() -> None:
     """Soal 6: menghitung ringkasan data dari soal sebelumnya."""
     print("\n=== Soal 6 - Ringkasan Algoritma ===")
@@ -287,7 +308,8 @@ def ringkasan_algoritma() -> None:
 def main() -> None:
     """Menu utama gabungan untuk semua latihan soal."""
     while True:
-        print("\n=== Program Latihan Praktik Python ===")
+        print("\n=== Latihan Soal ===")
+        print("A. Soal Teori")
         print("1. Soal 1 - Status Mahasiswa")
         print("2. Soal 2 - Diskon SPP")
         print("3. Soal 3 - Peringatan Stok")
@@ -296,9 +318,11 @@ def main() -> None:
         print("6. Soal 6 - Ringkasan Algoritma")
         print("0. Keluar")
 
-        pilihan = input("Pilih nomor soal: ").strip()
+        pilihan = input("Pilih nomor soal: ").strip().lower()
 
-        if pilihan == "1":
+        if pilihan in {"a", "teori"}:
+            program_soal_teori()
+        elif pilihan == "1":
             program_status_mahasiswa()
         elif pilihan == "2":
             program_diskon_spp()
@@ -314,7 +338,7 @@ def main() -> None:
             print("Program selesai.")
             break
         else:
-            print("Pilihan tidak valid. Silakan pilih 0-6.")
+            print("Pilihan tidak valid. Silakan pilih A atau 0-6.")
 
 
 if __name__ == "__main__":
